@@ -6,7 +6,7 @@
 */
 
 function extractValues(data) {
-  // Tu código aquí
+  // Mi código
   let valores = Object.values(data);
   console.log('<<<<< Resultado ejercicio 1 >>>>>')
   return valores
@@ -21,7 +21,7 @@ function extractValues(data) {
 */
 
 function arrayToLengthCounters(array) {
-  // Tu código aquí
+  // Mi código
   let objeto = {};
   for (let i = 0; i < array.length; i++) {
     let elemento = array[i];
@@ -40,7 +40,7 @@ function arrayToLengthCounters(array) {
 */
 
 function findKeysInCommon(objeto1, objeto2) {
-  // Tu código aquí
+  // Mi código
   let clave1 = Object.keys(objeto1);
   let clave2 = Object.keys(objeto2);
   let clavesEnComun = [];
