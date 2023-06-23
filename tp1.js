@@ -41,6 +41,19 @@ function arrayToLengthCounters(array) {
 
 function findKeysInCommon(objeto1, objeto2) {
   // Tu código aquí
+  let clave1 = Object.keys(objeto1);
+  let clave2 = Object.keys(objeto2);
+  let clavesEnComun = [];
+
+  for (let i = 0; i < clave1.length; i++) {
+    let clave = clave1[i];
+    if (clave2.includes(clave)) {
+      clavesEnComun.push(clave);
+    }
+  }
+
+  console.log('<<<<< Resultado ejercicio 3 >>>>>')
+  return clavesEnComun;
 }
 
 // Llamamos a las funciones y mostramos los resultados
@@ -48,7 +61,7 @@ function findKeysInCommon(objeto1, objeto2) {
 function main() {
   console.log(extractValues({a: 1, b: 2, c: 3}));
   console.log(arrayToLengthCounters(['gato', 'perro', 'elefante']));
-  //console.log(findKeysInCommon({a: 1, b: 2, c: 3}, {b: 4, c: 5, d: 6}));
+  console.log(findKeysInCommon({a: 1, b: 2, c: 3}, {b: 4, c: 5, d: 6}));
 }
 
 main();
