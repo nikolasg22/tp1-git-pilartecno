@@ -7,6 +7,9 @@
 
 function extractValues(data) {
   // Tu código aquí
+  let valores = Object.values(data);
+  console.log('<<<<< Resultado ejercicio 1 >>>>>')
+  return valores
 }
 
 /*  
@@ -37,8 +40,8 @@ function findKeysInCommon(objeto1, objeto2) {
 
 function main() {
   console.log(extractValues({a: 1, b: 2, c: 3}));
-  console.log(arrayToLengthCounters(['gato', 'perro', 'elefante']));
-  console.log(findKeysInCommon({a: 1, b: 2, c: 3}, {b: 4, c: 5, d: 6}));
+  //console.log(arrayToLengthCounters(['gato', 'perro', 'elefante']));
+  //console.log(findKeysInCommon({a: 1, b: 2, c: 3}, {b: 4, c: 5, d: 6}));
 }
 
 main();
